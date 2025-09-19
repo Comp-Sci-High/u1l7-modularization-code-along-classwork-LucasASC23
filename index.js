@@ -110,6 +110,7 @@ let blackPanther = {
     catchphrase: "Wakanda Forever",
 };
 
+
 let batman = {
     secretIdentity: "Bruce Wayne",
     city: "Gotham City",
@@ -129,3 +130,10 @@ let batman = {
 // Step 6: Call the function for Iron Man
 // Otherwise known as Tony Stark an Avenger stationed in NYC
 // He's known to say "I am Iron Man", and his greatest beef is with The Mandarin
+function characters(secretID, city, affiliation, archNemesis, catchphrase){
+    return "Otherwise known as " + secretID+ " an "+affiliation+" stationed in "+ city+ "He's known to say "+ catchphrase+" and his greatest beef is with "+archNemesis
+}
+console.log(characters("T'Challa", "Wakanda", "Avengers", "Killmonger", "Wakanda Forever"))
+console.log(characters("Bruce Wayne", "Gotham City", "Justice League", "Joker", "I am vengeance, I am the night, I am Batman"))
+console.log(characters("Tony Stark", "NYC", "Avengers", "The Mandarin", "I am Iron Man"))
+
